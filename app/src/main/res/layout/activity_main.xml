@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.imgaecompression.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <ImageView
+                android:id="@+id/withCompressImg"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/withoutCompressImg"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/takeCompressPhoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutParent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5"
+                android:text="Take Compress Photo" />
+
+
+            <Button
+                android:id="@+id/takeUnCompressPhoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutParent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5"
+                android:text="Take  Un Compress Photo" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

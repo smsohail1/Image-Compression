@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Imgae Compression</string>
+    <string name="file_provider_authority" translatable="false">example.com.imgaecompression.fileprovider</string>
+</resources>
